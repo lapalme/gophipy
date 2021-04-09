@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: GoPhiPy.aux
+The style file: plain.bst
+Database file #1: GoPhi.bib
+You've used 22 entries,
+            2118 wiz_defined-function locations,
+            647 strings with 9598 characters,
+and the built_in function-call counts, 8762 in all, are:
+= -- 844
+> -- 500
+< -- 9
++ -- 196
+- -- 174
+* -- 582
+:= -- 1409
+add.period$ -- 75
+call.type$ -- 22
+change.case$ -- 150
+chr.to.int$ -- 0
+cite$ -- 22
+duplicate$ -- 317
+empty$ -- 663
+format.name$ -- 174
+if$ -- 1894
+int.to.chr$ -- 0
+int.to.str$ -- 22
+missing$ -- 13
+newline$ -- 113
+num.names$ -- 48
+pop$ -- 212
+preamble$ -- 1
+purify$ -- 128
+quote$ -- 0
+skip$ -- 252
+stack$ -- 0
+substring$ -- 398
+swap$ -- 104
+text.length$ -- 9
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 88
+warning$ -- 0
+while$ -- 74
+width$ -- 24
+write$ -- 245

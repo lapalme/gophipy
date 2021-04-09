@@ -1,0 +1,151 @@
+\begin{thebibliography}{10}
+
+\bibitem{W13-2322}
+Laura Banarescu, Claire Bonial, Shu Cai, Madalina Georgescu, Kira Griffitt, Ulf
+  Hermjakob, Kevin Knight, Philipp Koehn, Martha Palmer, and Nathan Schneider.
+\newblock {Abstract Meaning Representation} for sembanking.
+\newblock In {\em Proceedings of the 7th Linguistic Annotation Workshop and
+  Interoperability with Discourse}, pages 178--186. Association for
+  Computational Linguistics, 2013.
+
+\bibitem{AMR-Guidelines}
+Laura Banarescu, Claire Bonial, Shu Cai, Madalina Georgescu, Kira Griffitt, Ulf
+  Hermjakob, Kevin Knight, Philipp Koehn, Martha Palmer, and Nathan Schneider.
+\newblock {Abstract Meaning Representation (AMR) 1.2.5 Specification}.
+\newblock \url{https://github.com/amrisi/amr-guidelines/blob/master/amr.md},
+  Feb 2018.
+
+\bibitem{bevilacqua-etal-2021-one}
+Michele Bevilacqua, Rexhina Blloshmi, and Roberto Navigli.
+\newblock One {SPRING} to rule them both: {S}ymmetric {AMR} semantic parsing
+  and generation without a complex pipeline.
+\newblock In {\em Proceedings of AAAI}, 2021.
+
+\bibitem{AMRBib}
+Austin Blodgett and Nathan Schneider.
+\newblock {AMR Bibliography}.
+\newblock \url{https://nert-nlp.github.io/AMR-Bibliography/}.
+
+\bibitem{L14-1011}
+Claire Bonial, Julia Bonn, Kathryn Conger, Jena~D. Hwang, and Martha Palmer.
+\newblock {PropBank}: Semantics of new predicate types.
+\newblock In {\em Proceedings of the Ninth International Conference on Language
+  Resources and Evaluation (LREC-2014)}. European Language Resources
+  Association (ELRA), 2014.
+
+\bibitem{Bos:2016:EPA:3030588.3030594}
+Johan Bos.
+\newblock Expressive power of {Abstract Meaning Representations}.
+\newblock {\em Comput. Linguist.}, 42(3):527--535, September 2016.
+
+\bibitem{Bos2019}
+Johan Bos.
+\newblock Separating argument structure from logical structure in amr
+  separating argument structure from logical structure in amr.
+\newblock arXiv:1908.01355v1, August 2019.
+
+\bibitem{P13-2131}
+Shu Cai and Kevin Knight.
+\newblock {Smatch: an Evaluation Metric for Semantic Feature Structures}.
+\newblock In {\em Proceedings of the 51st Annual Meeting of the Association for
+  Computational Linguistics (Volume 2: Short Papers)}, pages 748--752.
+  Association for Computational Linguistics, 2013.
+
+\bibitem{DBLP:conf/naacl/FlaniganDSC16}
+Jeffrey Flanigan, Chris Dyer, Noah~A. Smith, and Jaime~G. Carbonell.
+\newblock Generation from abstract meaning representation using tree
+  transducers.
+\newblock In Kevin Knight, Ani Nenkova, and Owen Rambow, editors, {\em {NAACL}
+  {HLT} 2016, The 2016 Conference of the North American Chapter of the
+  Association for Computational Linguistics: Human Language Technologies, San
+  Diego California, USA, June 12-17, 2016}, pages 731--739. The Association for
+  Computational Linguistics, 2016.
+
+\bibitem{W09-0613}
+Albert Gatt and Ehud Reiter.
+\newblock {SimpleNLG}: A realisation engine for practical applications.
+\newblock In {\em Proceedings of the 12th European Workshop on Natural Language
+  Generation (ENLG 2009)}, pages 90--93. Association for Computational
+  Linguistics, 2009.
+
+\bibitem{Goodman:2019}
+Michael~Wayne Goodman.
+\newblock {AMR} normalization for fairer evaluation.
+\newblock In {\em Proceedings of the 33rd Pacific Asia Conference on Language,
+  Information, and Computation}, Hakodate, 2019.
+
+\bibitem{AMR-Editor}
+Ulf Hermjakob.
+\newblock {AMR Editor}.
+\newblock \url{https://amr.isi.edu/editor.html}.
+
+\bibitem{AMR-Dictionary}
+Ulf Hermjakob.
+\newblock {AMR Annotation Dictionary}.
+\newblock \url{https://www.isi.edu/~ulf/amr/lib/amr-dict.html}, May 2018.
+
+\bibitem{AMR-Release3}
+Kevin Knight, Bianca Badarau, Laura Baranescu, Claire Bonial, Madalina Bardocz,
+  Kira Griffitt, Ulf Hermjakob, Daniel Marcu, Martha Palmer, Tim O'Gorman, and
+  Nathan Schneider.
+\newblock {Abstract Meaning Representation (AMR) Annotation Release 3.0}.
+\newblock \url{https://catalog.ldc.upenn.edu/LDC2020T02}, 2020.
+
+\bibitem{VerbalizingAMR2019Lapalme}
+Guy Lapalme.
+\newblock Verbalizing {AMR} structures.
+\newblock
+  \url{http://rali.iro.umontreal.ca/rali/sites/default/files/publis/GoPhi.pdf},
+  08/2019 2019.
+
+\bibitem{lewis-etal-2020-bart}
+Mike Lewis, Yinhan Liu, Naman Goyal, Marjan Ghazvininejad, Abdelrahman Mohamed,
+  Omer Levy, Veselin Stoyanov, and Luke Zettlemoyer.
+\newblock {BART}: Denoising sequence-to-sequence pre-training for natural
+  language generation, translation, and comprehension.
+\newblock In {\em Proceedings of the 58th Annual Meeting of the Association for
+  Computational Linguistics}, pages 7871--7880, Online, July 2020. Association
+  for Computational Linguistics.
+
+\bibitem{SemEval2016-T8-Desc}
+Jon May.
+\newblock {SemEval-2017 Task 8: Meaning Representation Parsing}.
+\newblock \url{http://alt.qcri.org/semeval2016/task8/}, 2016.
+
+\bibitem{SemEval2017-T9-Desc}
+Jon May.
+\newblock {SemEval-2017 Task 9: Abstract Meaning Representation} parsing and
+  generation.
+\newblock \url{http://alt.qcri.org/semeval2017/task9/}, 2017.
+
+\bibitem{Molins2015ENLG}
+Paul Molins and Guy Lapalme.
+\newblock {JSrealB}: A bilingual text realizer for web programming.
+\newblock In {\em European Conference on Natural Language Generation (Demo)},
+  pages 109--111, Brighton, UK, sep 2015.
+
+\bibitem{oepen-etal-2020-mrp}
+Stephan Oepen, Omri Abend, Lasha Abzianidze, Johan Bos, Jan Hajic, Daniel
+  Hershcovich, Bin Li, Tim O{'}Gorman, Nianwen Xue, and Daniel Zeman.
+\newblock {MRP} 2020: The second shared task on cross-framework and
+  cross-lingual meaning representation parsing.
+\newblock In {\em Proceedings of the CoNLL 2020 Shared Task: Cross-Framework
+  Meaning Representation Parsing}, pages 1--22, Online, November 2020.
+  Association for Computational Linguistics.
+
+\bibitem{Papineni:2002:BMA:1073083.1073135}
+Kishore Papineni, Salim Roukos, Todd Ward, and Wei-Jing Zhu.
+\newblock {BLEU}: A method for automatic evaluation of machine translation.
+\newblock In {\em Proceedings of the 40th Annual Meeting on Association for
+  Computational Linguistics}, ACL '02, pages 311--318, Stroudsburg, PA, USA,
+  2002. Association for Computational Linguistics.
+
+\bibitem{DBLP:conf/inlg/PourdamghaniKH16}
+Nima Pourdamghani, Kevin Knight, and Ulf Hermjakob.
+\newblock {Generating English from Abstract Meaning Representations}.
+\newblock In Amy Isard, Verena Rieser, and Dimitra Gkatzia, editors, {\em
+  {INLG} 2016 - Proceedings of the Ninth International Natural Language
+  Generation Conference, September 5-8, 2016, Edinburgh, {UK}}, pages 21--25.
+  The Association for Computer Linguistics, 2016.
+
+\end{thebibliography}

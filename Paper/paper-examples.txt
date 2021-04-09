@@ -1,0 +1,125 @@
+# ::id isi_0002.702
+# ::snt DH needed treatment at A&E after the attack.
+# ::paper Table 1
+(n / need-01
+     :ARG0 (p / person
+          :ARG0-of (h / have-rel-role-91
+               :ARG1 (i / i)
+               :ARG2 (h2 / husband))
+          :mod (d / dear))
+     :ARG1 (t / treat-03
+          :ARG1 p
+          :location (d2 / department
+               :topic (a / and
+                    :op1 (a2 / accident)
+                    :op2 (e / emergency))))
+     :time (a3 / after
+          :op1 (a4 / attack-01
+               :ARG1 p)))
+
+# ::id Guy  paper example
+# ::snt The boy desires the girl who does not like him
+# ::paper Table 2
+(d / desire-01
+    :ARG0 (b/boy)
+    :ARG1 (g/girl
+            :ARG0-of (l/like-01
+                        :polarity - 
+                        :ARG1 b)))
+
+# ::id isi_0001.12 ::date 2012-05-02T22:55:24 ::annotator ISI-AMR-01 ::preferred
+# ::snt The boy does n't think the Yankees will win.
+# ::save-date Fri Feb 21, 2014 ::file isi_0001_12.txt
+# ::paper Figure 1
+(t / think-01
+      :ARG0 (b / boy)
+      :ARG1 (w / win-01 
+            :polarity -
+            :ARG0 (t2 / team 
+                  :wiki "New_York_Yankees"
+                  :name (n / name 
+                         :op1 "Yankees"))))
+
+# ::id isi_0002.701
+# ::snt The MiG-25 fired an AAM at the Predator.
+# ::paper Table 9
+(f / fire-01
+     :ARG0 (a / aircraft-type
+          :wiki "Mikoyan-Gurevich_MiG-25"
+          :name (n / name
+               :op1 "MiG-25"))
+     :ARG1 (m / missile
+          :source (a2 / air)
+          :direction (a3 / air))
+     :destination (a4 / aircraft-type
+          :wiki "General_Atomics_MQ-1_Predator"
+          :name (n2 / name
+               :op1 "Predator")))
+
+# ::id isi_0002.691
+# ::snt IDK if he's str8.
+# ::paper Table 10
+(k / know-01
+     :polarity -
+     :ARG0 (i / i)
+     :ARG1 (t / truth-value
+          :polarity-of (s / straight-05
+               :ARG1 (h / he))))
+
+# ::id isi_0002.786
+# ::snt TKI258 binds tightly to the FGFR1 KD V561M (Ki ~ 35 nM).
+# ::paper Table 11
+(b / bind-01
+     :ARG1 (s / small-molecule
+          :wiki -
+          :name (n / name
+               :op1 "TKI258"))
+     :ARG2 (e / enzyme
+          :wiki "Fibroblast_growth_factor_receptor_1"
+          :name (n2 / name
+               :op1 "FGFR1")
+          :ARG1-of (k / knock-down-02)
+          :ARG2-of (m / mutate-01
+               :value "V561M"))
+     :ARG4 (b2 / binding-affinity-91
+          :ARG1 (i2 / inhibitor-constant)
+          :ARG2 (a / approximately
+               :op1 (c / concentration-quantity
+                    :quant 35
+                    :unit (n3 / nanomolar))))
+     :ARG4 (t / tight-05))
+
+# ::id isi_0002.766
+# ::snt I know why the chicken crossed the road.
+# ::paper Table 12
+(k / know-01
+     :ARG0 (i / i)
+     :ARG1 (t / thing
+          :ARG0-of (c / cause-01
+               :ARG1 (c2 / cross-02
+                    :ARG0 (c3 / chicken)
+                    :ARG1 (r / road)))))
+
+# ::id SemEval-5 
+# ::snt following the 1992-1995 war, bosnia remains ethnically divided and violence during major football matches occasionally occurs here.
+# ::paper Table 13
+(a / and
+     :op1 (r / remain-01
+           :ARG1 (c / country :wiki "Bosnia_and_Herzegovina"
+                  :name (n / name :op1 "Bosnia"))
+           :ARG3 (d / divide-02
+                  :ARG1 c
+                  :topic (e / ethnic)))
+     :op2 (v / violence
+           :time (m / match
+                  :mod (f2 / football)
+                  :ARG1-of (m2 / major-02))
+           :location (h / here)
+           :frequency (o / occasional))
+     :time (f / follow-01
+            :ARG2 (w / war
+                   :time (d2 / date-interval
+                          :op1 (d3 / date-entity :year 1992)
+                          :op2 (d4 / date-entity :year 1995)))))
+
+

@@ -1,0 +1,10 @@
+2021-04-01 18:30:48.862693: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+wandb: WARNING W&B installed but not logged in.  Run `wandb login` or set the WANDB_API_KEY env variable.
+Downloading: 100% 1.52k/1.52k [00:00<00:00, 1.27MB/s]
+Downloading: 100% 899k/899k [00:00<00:00, 24.0MB/s]
+Downloading: 100% 456k/456k [00:00<00:00, 21.7MB/s]
+Downloading: 100% 1.02G/1.02G [00:22<00:00, 44.7MB/s]
+100% 8/8 [00:01<00:00,  4.08it/s]
+BLEU: 51.31
+
+Execution time: 3:21 minutes
