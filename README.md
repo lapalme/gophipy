@@ -31,34 +31,34 @@ More information about the design and the rationale of the system [in this paper
         python3
         import amr2text`
 
-    * call `amr2text.amr2text(amrString,trace=False)` to return the English sentence. For example:
-        
-            >>> amr2text('(s / say-01 :ARG0 (i/I) :ARG1 (h/hello) :ARG2 (w/world))')
-            'I say the hello to the world.'
-            >>> amr2text('(s / say-01 :ARG0 (i/I) :ARG1 (h/hello) :ARG2 (w/world))',True)
-            *** AMR
-            (s / say-01 :ARG0 (i/I) :ARG1 (h/hello) :ARG2 (w/world))
-            *** Semantic Representation
-            (s say-01 [:ARG0 (i I [] ↑s),
-                       :ARG1 (h hello [] ↑s),
-                       :ARG2 (w world [] ↑s)])
-            *** Syntactic Representation
-            S(Pro("I").pe(1),
-              VP(V("say"),
-                 NP(D("the"),
-                    N("hello")),
-                 PP(P("to"),
-                    NP(D("the"),
-                       N("world")))))
-            'I say the hello to the world.'
-        
-    * To process a whole file containing AMRs, call  
-      `amr2text.showAMRsFile(fileName,regex=r"",trace=False,createExcel=False)`
+* call `amr2text.amr2text(amrString,trace=False)` to return the English sentence. For example:
     
-      This shows the input AMRs in the file *fileName* that match the *regex* which can be an empty string to match all AMRs. Matching is performed with the `re.DOTALL` flag for ignoring end of lines.   
-        * If `trace` is `True` display the intermediary structures leading to their English realization.  
-        * if `createExcel` is True, create an Excel file for evaluation in the same directory as the *fileName*
-        * when the regex is not an empty string, no file is created
+        >>> amr2text('(s / say-01 :ARG0 (i/I) :ARG1 (h/hello) :ARG2 (w/world))')
+        'I say the hello to the world.'
+        >>> amr2text('(s / say-01 :ARG0 (i/I) :ARG1 (h/hello) :ARG2 (w/world))',True)
+        *** AMR
+        (s / say-01 :ARG0 (i/I) :ARG1 (h/hello) :ARG2 (w/world))
+        *** Semantic Representation
+        (s say-01 [:ARG0 (i I [] ↑s),
+                   :ARG1 (h hello [] ↑s),
+                   :ARG2 (w world [] ↑s)])
+        *** Syntactic Representation
+        S(Pro("I").pe(1),
+          VP(V("say"),
+             NP(D("the"),
+                N("hello")),
+             PP(P("to"),
+                NP(D("the"),
+                   N("world")))))
+        'I say the hello to the world.'
+    
+* To process a whole file containing AMRs, call  
+  `amr2text.showAMRsFile(fileName,regex=r"",trace=False,createExcel=False)`
+
+  This shows the input AMRs in the file *fileName* that match the *regex* which can be an empty string to match all AMRs. Matching is performed with the `re.DOTALL` flag for ignoring end of lines.   
+    * If `trace` is `True` display the intermediary structures leading to their English realization.  
+    * if `createExcel` is True, create an Excel file for evaluation in the same directory as the *fileName*
+    * when the regex is not an empty string, no file is created
         
 # File organization of GoPhiPy
 
