@@ -203,7 +203,7 @@ def showAMRsFile(fileName,regex=r"",trace=False,createExcel=False):
     
                  
 dataDir="/Users/lapalme/Dropbox/AMR/"
-resultDir=os.path.join(os.path.dirname(sys.path[0]),"Results/")
+resultDir=os.path.join(os.path.dirname(sys.path[0]),"../Results/")
 ## Files with examples
 #     fileName=dataDir+"amr-release-2.0-amrs-training-guidelines.txt"
 #     fileName="/Users/lapalme/Desktop/abstract_meaning_representation_amr_2.0/data/amrs/unsplit/amr-release-2.0-amrs-bolt.txt"

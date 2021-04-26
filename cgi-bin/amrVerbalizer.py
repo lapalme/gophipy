@@ -9,7 +9,7 @@
 ##     it uses markup.py for generating the HTML
 ##     it is transposition of the web page http://rali.iro.umontreal.ca/amr/current/build/amrGenerate.cgi 
 import sys,cgi,os,io,re
-sys.path.append(os.path.join(os.path.dirname(sys.path[0]),'build'))
+sys.path.append(os.path.join(os.path.dirname(sys.path[0]),'src'))
 
 import markup
 from markup import oneliner as e

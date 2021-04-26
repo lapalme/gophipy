@@ -10,7 +10,7 @@ More information about the design and the rationale of the system [in this paper
 
 ## Using the web interface at RALI
 
-* browse [GoPhiPy](http://rali.iro.umontreal.ca/amr/current/build/amrVerbalizer.py) to edit an AMR that can be verbalized
+* browse [GoPhiPy](http://rali.iro.umontreal.ca/amr/python/current/export/cgi-bin/amrVerbalizer.cgi) to edit an AMR that can be verbalized
 
 ## Using the web interface with the internal Python web server
 * Launch a shell console
@@ -27,11 +27,11 @@ More information about the design and the rationale of the system [in this paper
      
 * Launch the Python interpreter in the `src` directory, and import the `amr2text` function
 
-        `cd('/path/to/the/src').`  
-        `python3`
-		`from amr2text import amr2text`
+        cd('/path/to/the/src').  
+        python3
+        import amr2text`
 
-    * call `amr2text(amrString,trace=False)` to return the English sentence. For example:
+    * call `amr2text.amr2text(amrString,trace=False)` to return the English sentence. For example:
         
             >>> amr2text('(s / say-01 :ARG0 (i/I) :ARG1 (h/hello) :ARG2 (w/world))')
             'I say the hello to the world.'
@@ -53,7 +53,7 @@ More information about the design and the rationale of the system [in this paper
             'I say the hello to the world.'
         
     * To process a whole file containing AMRs, call  
-      `showAMRsFile(fileName,regex=r"",trace=False,createExcel=False)`
+      `amr2text.showAMRsFile(fileName,regex=r"",trace=False,createExcel=False)`
     
       This shows the input AMRs in the file *fileName* that match the *regex* which can be an empty string to match all AMRs. Matching is performed with the `re.DOTALL` flag for ignoring end of lines.   
         * If `trace` is `True` display the intermediary structures leading to their English realization.  
@@ -129,7 +129,7 @@ A  Python CGI that creates a web page in which a user can edit an AMR, which is 
 * `GoPhiPy.pdf` : paper describing the rationale and design of `GoPhiPy`
 
 ## AMR files
-Text files containing AMRs for developing and testing in three directories which are not given here because some of them have copyrights:
+Text files containing AMRs for developing and testing in three directories some of which are not given here because of copyrights:
 
 * `amr_annotation_3.0` : should be filled with content downloaded [from LDC](https://catalog.ldc.upenn.edu/LDC2020T02 "Abstract Meaning Representation (AMR) Annotation Release 3.0  - Linguistic Data Consortium")
 * `amr-examples` : examples gathered for developing GoPhiPy:
