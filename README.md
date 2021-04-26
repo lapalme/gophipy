@@ -1,10 +1,10 @@
 # GoPhiPy : an AMR to ENGLISH VERBALIZER
 
-GoPhiPY (*Generation Of Parenthesized Human Input in Python*) is a system for generating a literal reading of Abstract Meaning Representation (AMR) structures. The system, written in Python, uses a symbolic approach to transform the original rooted graph into a tree of constituents which is used as input for [jsRealB](https://github.com/rali-udem/JSrealB "GitHub - rali-udem/JSrealB: A JavaScript bilingual text realizer for web development") to realize an English sentence. 
+GoPhiPy (*Generation Of Parenthesized Human Input in Python*) is a system for generating a literal reading of Abstract Meaning Representation (AMR) structures. The system, written in Python, uses a symbolic approach to transform the original rooted graph into a tree of constituents which is used as input for [jsRealB](https://github.com/rali-udem/JSrealB "GitHub - rali-udem/JSrealB: A JavaScript bilingual text realizer for web development") to realize an English sentence. 
 
-This is a Python (re)implementation of GoPhi ([described in this paper](documentation/GoPhi.pdf)) which used Prolog for the tree to tree transformation between the AMR and the syntactic representation given as input to jsRealB. This version makes use of Python classes to represent the syntactic representation which is then serialized to the appropriate format.
+This is a Python (re)implementation of GoPhi ([described in this paper](https://github.com/rali-udem/gophi/blob/master/documentation/GoPhi.pdf)) which used Prolog for the tree to tree transformation between the AMR and the syntactic representation given as input to jsRealB. This version makes use of Python classes to represent the syntactic representation which is then serialized to the appropriate format.
 
-More information about the design and the rationale of the system [in this paper](documentation/GoPhiPy.pdf).
+More information about the design and the rationale of the system [in this paper](docs/GoPhiPy.pdf).
 
 # Running GoPhiPy
 
@@ -25,9 +25,9 @@ More information about the design and the rationale of the system [in this paper
 * Launch the [jsRealB interpreter](https://github.com/rali-udem/JSrealB "GitHub - rali-udem/JSrealB: A JavaScript bilingual text realizer for web development") in another window/process  
 `node /path/to/gophipy/tools/gophiPy-jsRealB-server.js  `
      
-* Launch the Python interpreter in the build directory, and import the `amr2text` function
+* Launch the Python interpreter in the `src` directory, and import the `amr2text` function
 
-        `cd('/path/to/the/build').`  
+        `cd('/path/to/the/src').`  
         `python3`
 		`from amr2text import amr2text`
 
@@ -62,7 +62,7 @@ More information about the design and the rationale of the system [in this paper
         
 # File organization of GoPhiPy
 
-## Python (.py) files (`build` directory)
+## Python (.py) files (`src` directory)
 
 ### Transformations:
 
@@ -113,7 +113,7 @@ A  Python CGI that creates a web page in which a user can edit an AMR, which is 
     * `addLexicon-dme.js` : load *big* lexicon `lexicon-dme.json` and make some local modifications
     * `amr-verb.css` : CSS for the generated web pages
     * `amr-verb.js`  : javascript for use in the generated web pages
-    * `jsRealB.min.js` : minifyed jsRealB that generates from the SSurfR
+    * `jsRealB.min.js` : minified jsRealB that generates from the SSurfR
     * `lexicon-dme.js` : *big* lexicon in JSON format
     * `realize.js`     : load the dme lexicon and realize the expression saved as string in the `syntR` global variable
 
@@ -122,11 +122,11 @@ A  Python CGI that creates a web page in which a user can edit an AMR, which is 
 * `lambdaApplication.py` : illustrates the lambda application process using a simplistic example. This was useful for developing the notation.
 * `sampleTest.py`        : create a sample from the AMR 3.0 split/test/ corpora
 * `lexicalSemanticsSimple.py` : the example of lambda application used in the appendix of the paper
-* `gophiPy-jsRealB-server.js` : node script for launching the gophiPy web server
+* `gophiPy-jsRealB-server.js` : node script for launching the GoPhiPy web server
 * `jsRealB-node.js` : node version of jsRealB
 
 ## Informations (`Doc` directory)
-* `GoPhiPy.pdf` : paper describing the rationale and design of `gophiPy`
+* `GoPhiPy.pdf` : paper describing the rationale and design of `GoPhiPy`
 
 ## AMR files
 Text files containing AMRs for developing and testing in three directories which are not given here because some of them have copyrights:
@@ -143,4 +143,4 @@ Text files containing AMRs for developing and testing in three directories which
 * `*.out`                   : input AMRs augmented with output of gophi and baselinegen
 * `*.xlsx`                  : Excel file (AMR, Basegen, reference sent, gophi output) for development or comparative evaluation, conventionally we add information about the evaluator before `.xlsx`
 
-[Guy Lapalme](lapalme@iro.umontreal.ca)
+[Guy Lapalme](mailto:lapalme@iro.umontreal.ca)
