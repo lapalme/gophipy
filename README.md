@@ -18,7 +18,7 @@ More information about the design and the rationale of the system [in this paper
     * go to the gophipy directory, and launch the Python web server  
         `cd /path/to/gophipy`  
         `python3 -m http.server --cgi `
-    * In a web browser, browse : [http://0.0.0.0:8000/cgi-bin/amrVerbalizer.py](http://0.0.0.0:8000/cgi-bin/amrVerbalizer.py) to edit an AMR that can be verbalized
+    * In a web browser, browse : [http://localhost:8000/cgi-bin/amrVerbalizer.py](http://0.0.0.0:8000/cgi-bin/amrVerbalizer.py) to edit an AMR that can be verbalized
 
 ## From the Python console
 
@@ -29,13 +29,13 @@ More information about the design and the rationale of the system [in this paper
 
         cd('/path/to/the/src').  
         python3
-        import amr2text`
+        import amr2text
 
 * call `amr2text.amr2text(amrString,trace=False)` to return the English sentence. For example:
     
-        >>> amr2text('(s / say-01 :ARG0 (i/I) :ARG1 (h/hello) :ARG2 (w/world))')
+        >>> amr2text.amr2text('(s / say-01 :ARG0 (i/I) :ARG1 (h/hello) :ARG2 (w/world))')
         'I say the hello to the world.'
-        >>> amr2text('(s / say-01 :ARG0 (i/I) :ARG1 (h/hello) :ARG2 (w/world))',True)
+        >>> amr2text.amr2text('(s / say-01 :ARG0 (i/I) :ARG1 (h/hello) :ARG2 (w/world))',True)
         *** AMR
         (s / say-01 :ARG0 (i/I) :ARG1 (h/hello) :ARG2 (w/world))
         *** Semantic Representation
@@ -55,10 +55,12 @@ More information about the design and the rationale of the system [in this paper
 * To process a whole file containing AMRs, call  
   `amr2text.showAMRsFile(fileName,regex=r"",trace=False,createExcel=False)`
 
-  This shows the input AMRs in the file *fileName* that match the *regex* which can be an empty string to match all AMRs. Matching is performed with the `re.DOTALL` flag for ignoring end of lines.   
+  This call shows the input AMRs in the file *fileName* that match the *regex* which can be an empty string to match all AMRs. Matching is performed with the `re.DOTALL` flag for ignoring end of lines.   
     * If `trace` is `True` display the intermediary structures leading to their English realization.  
     * if `createExcel` is True, create an Excel file for evaluation in the same directory as the *fileName*
-    * when the regex is not an empty string, no file is created
+    * when the regex is an empty string, the BLEU score is computed and the differences between 
+    the reference and the generated sentences are displayed on the standard output
+    * when the regex is not an empty string, no file is created and no differences are displayed
         
 # File organization of GoPhiPy
 

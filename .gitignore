@@ -1,5 +1,6 @@
 .DS_Store
 Paper/
 __pycache__/
+cgi-bin/__pycache__/
 Results/
 
