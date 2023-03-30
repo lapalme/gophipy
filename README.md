@@ -18,7 +18,7 @@ More information about the design and the rationale of the system [in this paper
     * go to the gophipy directory, and launch the Python web server  
         `cd /path/to/gophipy`  
         `python3 -m http.server --cgi `
-    * In a web browser, browse : [http://localhost:8000/cgi-bin/amrVerbalizer.py](http://0.0.0.0:8000/cgi-bin/amrVerbalizer.py) to edit an AMR that can be verbalized
+    * In a web browser, browse : [http://localhost:8000/cgi-bin/amrVerbalizer.py](http://localhost:8000/cgi-bin/amrVerbalizer.py) to edit an AMR that can be verbalized
 
 ## From the Python console
 
